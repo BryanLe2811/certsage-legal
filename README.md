@@ -33,6 +33,29 @@ Or: repo Settings -> Pages -> Source: Deploy from a branch -> `master` / `/ (roo
 
 First build takes 1-2 minutes. After that every push republishes automatically.
 
+## Custom domain
+
+Served at `legal.certsage.app`. A subdomain, deliberately -- the apex
+`certsage.app` stays free for a marketing site later, and the Play Console URL
+must never have to move once submitted.
+
+DNS at the registrar:
+
+    Type   Name    Value                    TTL
+    CNAME  legal   bryanle2811.github.io.   3600
+
+Then Settings -> Pages -> Custom domain -> `legal.certsage.app` -> Save, and tick
+**Enforce HTTPS** once it becomes available.
+
+Order matters: add the DNS record FIRST, wait for it to resolve, then set the
+domain in GitHub. `.app` is on the HSTS preload list, so browsers refuse plain
+HTTP outright -- until Let's Encrypt issues the certificate the site does not
+load at all, and there is no click-through warning. Load the URL in a real
+browser before pasting it into Play Console.
+
+Saving a custom domain makes GitHub commit a `CNAME` file to this repo, so
+`git pull` before your next local edit.
+
 ## Where these URLs go
 
 1. **Play Console -> Store listing** -> Privacy policy URL
