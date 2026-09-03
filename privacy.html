@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — CertSage</title>
+<meta name="description" content="How the CertSage certification study app collects, uses, shares and retains your personal data.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
+  <h1>Privacy Policy</h1>
+  <p class="dates">Last updated: 4 September 2026 &middot; Effective: 4 September 2026</p>
+</header>
+
+
+<p class="lede">CertSage is a mobile app that coaches you through technology certification
+exams with an AI study coach. This policy explains exactly what we collect, why, who else
+sees it, and how you get it deleted. It is written to describe what the app actually does
+today — not what it might do later.</p>
+
+<h2 id="who-we-are">1. Who we are</h2>
+
+<p>CertSage is published by Van Manh Le, an individual
+developer based in Australia ("we", "us", "our"). For the purposes of the UK and EU General
+Data Protection Regulation, we are the <strong>data controller</strong> for the personal data
+described here.</p>
+
+<div class="card">
+  <p><strong>Privacy contact</strong><br>
+  <a class="contact-mail" href="mailto:support.certsage@integolutions.com">support.certsage@integolutions.com</a></p>
+  <p style="margin-bottom:0">Use this address for any question about this policy, to exercise
+  your rights, or to request deletion of your account and data.</p>
+</div>
+
+<p>This policy covers the CertSage mobile application (Android package
+<code>com.certsage.app</code>, and the iOS app under the same identifier) and the backend
+services it talks to. It does not cover the third-party websites we link out to, such as
+official certification documentation.</p>
+
+<h2 id="summary">2. The short version</h2>
+
+<div class="scroller">
+<table>
+  <thead>
+    <tr><th>Question</th><th>Answer</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Do you show ads?</td><td>No. There is no advertising SDK and no advertising identifier is collected.</td></tr>
+    <tr><td>Do you sell my data?</td><td>No. We do not sell or rent personal data, and we do not share it for cross-context behavioural advertising.</td></tr>
+    <tr><td>Do you track me across other apps?</td><td>No.</td></tr>
+    <tr><td>Do you use third-party analytics?</td><td>No analytics or crash-reporting SDK is embedded in the app.</td></tr>
+    <tr><td>Does an AI see my messages?</td><td>Yes — your coaching conversations are sent to Anthropic to generate replies. See <a href="#ai">section 6</a>.</td></tr>
+    <tr><td>Can I get everything deleted?</td><td>Yes. Email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
+    <tr><td>Do you see my card details?</td><td>Never. Payment is handled entirely by Google Play or Apple.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="what-we-collect">3. What we collect</h2>
+
+<h3>a. Account and profile</h3>
+<ul>
+  <li><strong>Email address</strong> — required to create an account and to sign you in.</li>
+  <li><strong>Password</strong> — only if you sign up with email and password. It is stored by
+      our authentication provider as a salted hash. It is never visible to us and cannot be
+      recovered, only reset.</li>
+  <li><strong>Google or Apple sign-in identity</strong> — if you choose that route, we receive
+      the account identifier, your email address, and the display name and profile picture URL
+      those services choose to return. We do not receive your password.</li>
+  <li><strong>Preferred name</strong> — what you would like the app to call you. Asked once,
+      after sign-up.</li>
+  <li><strong>Occupation</strong> — chosen from a fixed list of ten options, one of which is
+      "Prefer not to say". There is no free-text box, deliberately.</li>
+  <li><strong>Time zone</strong> — the IANA identifier reported by your device (for example
+      <code>Australia/Brisbane</code>), so daily usage limits reset at your local midnight
+      rather than in UTC.</li>
+  <li><strong>Notification preferences.</strong></li>
+</ul>
+
+<h3>b. Your study goals</h3>
+<p>Asked once per certification you take on, and editable at any time in Settings:</p>
+<ul>
+  <li>Your self-rated experience level with that technology.</li>
+  <li>Your reason for studying, chosen from a fixed list.</li>
+  <li><strong>A free-text description of your motivation</strong>, in your own words — optional.
+      Please do not put sensitive personal information in this field; it is sent to our AI
+      provider as context for the coach.</li>
+  <li>Your target exam date and weekly study goal.</li>
+</ul>
+
+<h3>c. Learning activity</h3>
+<ul>
+  <li>Which certification tracks you are enrolled in, which is currently active, and a record
+      of each switch between them — including the reason you gave and your readiness score at
+      that moment.</li>
+  <li>Each study session: its mode (Interactive, Listening or Reading), when it started and
+      ended, and which topic it covered.</li>
+  <li><strong>The messages you send to the AI coach and the replies it gives</strong>, stored as
+      a transcript so the coach has continuity within a session.</li>
+  <li>Every quiz question shown to you, the answer you gave, whether it was correct, and the
+      resulting mastery score for that concept.</li>
+  <li>Practice exam attempts and per-question results.</li>
+  <li>Derived progress data: readiness percentages per domain and overall, study streaks,
+      session counts and average scores.</li>
+</ul>
+
+<h3>d. Subscription and payment</h3>
+<ul>
+  <li><strong>We never receive, process or store payment card details.</strong> Purchases are
+      processed by Google Play (or the App Store on iOS) under their own terms.</li>
+  <li>Through our subscription manager, RevenueCat, we receive and store: a pseudonymous
+      customer identifier (your account's internal UUID), your plan tier, the platform you
+      purchased on, subscription status, renewal date and auto-renew flag.</li>
+  <li>We keep a verbatim copy of the subscription events sent to us, so a billing dispute can
+      be reconstructed exactly as it happened.</li>
+</ul>
+
+<h3>e. Operational records</h3>
+<ul>
+  <li>For each AI call made on your behalf: the model used, token counts, the resulting cost,
+      the type of task and a timestamp. This exists to keep the service affordable and to
+      enforce fair-use limits — not to profile you.</li>
+  <li>Standard server logs kept by our hosting provider, which include IP addresses and request
+      timestamps, used for security, abuse prevention and debugging.</li>
+</ul>
+
+<h2 id="not-collected">4. What we do not collect</h2>
+
+<p>Stated explicitly because the absence is a design decision, not an oversight:</p>
+
+<ul>
+  <li><strong>No advertising identifier</strong>, no ad networks, no ad profiling, no
+      cross-app tracking.</li>
+  <li><strong>No location data</strong> of any kind, precise or approximate.</li>
+  <li><strong>No contacts, photos, files, calendar or SMS access.</strong></li>
+  <li><strong>No microphone or camera access.</strong> The Android app does not request the
+      <code>RECORD_AUDIO</code> or <code>CAMERA</code> permission. Voice input is planned for a
+      future version; this policy will be updated before it ships.</li>
+  <li><strong>No third-party analytics or crash-reporting SDK</strong> is embedded in the app.</li>
+  <li><strong>No push notification tokens</strong> are currently collected. Push is not active
+      in this version.</li>
+  <li><strong>No health, financial, biometric, racial, religious, political or sexual-orientation
+      data.</strong> We have no field for it and do not want it.</li>
+</ul>
+
+<p>The Android app requests only these permissions: internet access, and — for playing
+Listening-mode audio with the screen off — wake lock, foreground service, media playback
+foreground service, and notification display. None of them read personal data from your device.</p>
+
+<h2 id="how-we-use">5. How we use your data</h2>
+
+<ul>
+  <li>To create and secure your account, and to sign you in.</li>
+  <li>To deliver the core product: generate coaching replies, quiz questions and explanations,
+      track what you have mastered, and calculate your readiness score.</li>
+  <li>To choose what to recommend you study next.</li>
+  <li>To apply your subscription entitlements and enforce free-tier usage limits fairly.</li>
+  <li>To keep the service running and affordable — monitoring AI cost per user, diagnosing
+      failures, and preventing abuse.</li>
+  <li>To respond when you contact us.</li>
+</ul>
+
+<p>We do not use your data to build advertising profiles, and we do not use your study data for
+any purpose other than running the app you are using it in.</p>
+
+<h2 id="ai">6. How AI processing works</h2>
+
+<p>CertSage is built around an AI coach, so this section matters more than most. We use
+third-party AI providers, and we tell you precisely what reaches them.</p>
+
+<div class="card">
+  <h3>Sent to Anthropic (Claude)</h3>
+  <p>When you talk to the coach, take a quiz, or open the home screen, we send:</p>
+  <ul>
+    <li>The messages you type to the coach, and the conversation so far in that session.</li>
+    <li>The names of the certification, domain, sub-topic and concepts you are studying.</li>
+    <li>Your progress state — which concepts you are weak on, improving on, or have not seen.</li>
+    <li>Your study goals, <strong>including the free-text motivation you wrote</strong>, your
+        experience level and your target exam date.</li>
+    <li>Your first name, used only to open the home-screen greeting.</li>
+    <li>Short summaries of your recent sessions, for continuity.</li>
+  </ul>
+  <p style="margin-bottom:0">We do <strong>not</strong> send your email address, your password,
+  any payment information, or any device identifier.</p>
+</div>
+
+<div class="card">
+  <h3>Sent to OpenAI (text-to-speech only)</h3>
+  <p style="margin-bottom:0">Listening-mode audio is generated in advance from narration scripts
+  that <em>we</em> write and review, and then cached and served to every learner. <strong>No
+  personal data of any kind is sent to OpenAI</strong> — it never receives your messages, your
+  progress or your identity. We use no OpenAI text model.</p>
+</div>
+
+<h3>Training, retention and human review</h3>
+<ul>
+  <li>Anthropic and OpenAI both state that data submitted through their commercial APIs is
+      <strong>not used to train their models</strong>. We have not opted into any programme that
+      would change that.</li>
+  <li>Those providers may retain API inputs and outputs for a limited period for safety and
+      abuse monitoring, under their own policies, which are linked in
+      <a href="#third-parties">section 7</a>.</li>
+  <li>We may read stored session transcripts when investigating a specific fault or a report of
+      abuse. We do not read them routinely.</li>
+</ul>
+
+<h3>Automated decision-making</h3>
+<p>Your readiness score and the topics recommended to you are generated automatically. These
+affect only what the app suggests you study. They produce no legal effect and no similarly
+significant effect on you within the meaning of GDPR Article 22, and nothing about your account,
+billing or access depends on them.</p>
+
+<div class="callout">
+  <p><strong>Please do not type sensitive personal information into the coach.</strong> Chat
+  messages are stored against your account and sent to our AI provider to produce a reply. Treat
+  the coach as you would a study group, not a private diary.</p>
+</div>
+
+<h2 id="third-parties">7. Who else processes your data</h2>
+
+<p>We use the following providers. Each acts as a processor or sub-processor on our behalf, is
+bound by a data processing agreement, and receives only what it needs.</p>
+
+<div class="scroller">
+<table>
+  <thead>
+    <tr><th>Provider</th><th>Role</th><th>What it receives</th><th>Location</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://supabase.com/privacy" rel="noopener">Supabase</a></td>
+      <td>Database, authentication, file storage and server functions</td>
+      <td>All account, profile, study and subscription data described above</td>
+      <td>Singapore (<code>ap-southeast-1</code>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic</a></td>
+      <td>AI coaching, quiz generation and scoring</td>
+      <td>Coaching messages, progress state, study goals, first name — as listed in section 6</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a href="https://openai.com/policies/privacy-policy" rel="noopener">OpenAI</a></td>
+      <td>Text-to-speech for Listening mode</td>
+      <td>Narration scripts written by us. No personal data.</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a></td>
+      <td>Subscription and entitlement management</td>
+      <td>Pseudonymous account identifier, purchase and subscription status</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td><a href="https://policies.google.com/privacy" rel="noopener">Google Play</a></td>
+      <td>App distribution and payment processing</td>
+      <td>Your purchase details, handled entirely under Google's own policy</td>
+      <td>Global</td>
+    </tr>
+    <tr>
+      <td><a href="https://policies.google.com/privacy" rel="noopener">Google</a> /
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> sign-in</td>
+      <td>Optional authentication</td>
+      <td>Only used if you choose that sign-in method</td>
+      <td>Global</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>We may also disclose personal data where we are legally required to — for example in response
+to a valid court order or lawful request from a regulator. We will not do so voluntarily.</p>
+
+<p>If CertSage is ever sold or transferred, your data may transfer with it. You would be told
+before that happened and given the opportunity to delete your account first.</p>
+
+<h2 id="legal-bases">8. Legal bases for processing (UK/EU GDPR)</h2>
+
+<div class="scroller">
+<table>
+  <thead>
+    <tr><th>What we do</th><th>Legal basis</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Create your account, deliver study features, run the AI coach, apply your subscription</td>
+        <td><strong>Performance of a contract</strong> — Art. 6(1)(b)</td></tr>
+    <tr><td>Optional profile answers: occupation, free-text motivation, target exam date</td>
+        <td><strong>Consent</strong> — Art. 6(1)(a). You may leave them blank or choose "Prefer not to say", and withdraw at any time by clearing them in Settings.</td></tr>
+    <tr><td>Security, abuse prevention, fair-use enforcement, cost control, fixing faults</td>
+        <td><strong>Legitimate interests</strong> — Art. 6(1)(f). We have balanced these against your rights and consider the impact minimal.</td></tr>
+    <tr><td>Keeping financial and subscription records</td>
+        <td><strong>Legal obligation</strong> — Art. 6(1)(c)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>We do not process special-category data under Article 9, and we do not ask for any.</p>
+
+<h2 id="transfers">9. International data transfers</h2>
+
+<p>Our database, authentication and file storage are hosted in <strong>Singapore</strong>
+(Supabase region <code>ap-southeast-1</code>). Anthropic, OpenAI and RevenueCat are based in the
+<strong>United States</strong>. Using CertSage therefore involves transferring personal data
+outside the UK, the EEA and Australia, to countries that do not have a UK or EU adequacy
+decision.</p>
+
+<p>Those transfers are made under the European Commission's <strong>Standard Contractual
+Clauses</strong> (and the UK International Data Transfer Addendum where applicable), incorporated
+into each provider's data processing agreement, together with the technical measures described in
+<a href="#security">section 13</a>. You can request a copy of the relevant safeguards by
+emailing us.</p>
+
+<h2 id="retention">10. How long we keep it</h2>
+
+<div class="scroller">
+<table>
+  <thead>
+    <tr><th>Data</th><th>Kept for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Account, profile, study history, chat transcripts, quiz and exam results</td>
+        <td>As long as your account exists. Deleted when you delete your account.</td></tr>
+    <tr><td>Subscription status</td>
+        <td>Deleted with your account. RevenueCat and Google retain their own records under their own policies.</td></tr>
+    <tr><td>AI cost records and billing event logs</td>
+        <td><strong>Retained after account deletion, with the link to your account removed</strong> — see the note below.</td></tr>
+    <tr><td>Server logs</td>
+        <td>Per our hosting provider's retention schedule, typically a short rolling window.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout">
+  <p style="margin-bottom:0"><strong>The one exception, stated plainly.</strong> When you delete
+  your account, our AI cost records and raw billing event logs are not destroyed — the reference
+  to your account is set to null, so the rows survive as <em>anonymised</em> financial and
+  operational records with no way to tie them back to you. We keep them because accurate cost and
+  billing history has to outlive the accounts it came from. Everything that identifies you is
+  removed.</p>
+</div>
+
+<h2 id="rights">11. Your rights</h2>
+
+<p>Wherever you live, you may ask us to:</p>
+<ul>
+  <li><strong>Access</strong> the personal data we hold about you, and receive a copy.</li>
+  <li><strong>Correct</strong> anything inaccurate. Most profile and goal fields you can edit
+      yourself in Settings.</li>
+  <li><strong>Delete</strong> your account and personal data — see <a href="#deletion">below</a>.</li>
+  <li><strong>Export</strong> your data in a portable, machine-readable format.</li>
+  <li><strong>Restrict or object to</strong> processing based on our legitimate interests.</li>
+  <li><strong>Withdraw consent</strong> for the optional fields, without affecting anything done
+      before you withdrew it.</li>
+</ul>
+
+<p>Email <a href="mailto:support.certsage@integolutions.com">support.certsage@integolutions.com</a>
+from the address on your account. We respond within <strong>30 days</strong>. There is no charge
+unless a request is manifestly unfounded or excessive.</p>
+
+<p>If you are in the UK or EEA and are unhappy with how we have handled your data, you may
+complain to your local supervisory authority — in the UK, the
+<a href="https://ico.org.uk/" rel="noopener">Information Commissioner's Office</a>. In Australia,
+you may complain to the <a href="https://www.oaic.gov.au/" rel="noopener">Office of the Australian
+Information Commissioner</a>. We would rather you raised it with us first.</p>
+
+<h2 id="deletion">12. Deleting your account</h2>
+
+<p>You can have your account and all associated personal data permanently deleted. Full
+instructions, and what is and is not removed, are on our
+<a href="delete-account.html"><strong>account deletion page</strong></a>.</p>
+
+<p>In short: email
+<a href="mailto:support.certsage@integolutions.com">support.certsage@integolutions.com</a> from
+your account's email address with the subject <em>Delete my account</em>. We confirm within 7 days
+and complete deletion within 30.</p>
+
+<h2 id="security">13. How we protect your data</h2>
+
+<ul>
+  <li>All traffic between the app and our servers is encrypted with TLS. The Android build blocks
+      unencrypted connections outright.</li>
+  <li>Data is encrypted at rest by our hosting provider.</li>
+  <li>Every table enforces <strong>row-level security</strong>: a request carrying your
+      credentials can only ever read rows belonging to you, enforced by the database itself rather
+      than by app code.</li>
+  <li>Passwords are salted and hashed by our authentication provider. We never see them.</li>
+  <li>Graded results and quiz answer keys are writable only by our server, never by the app, so
+      results cannot be forged and answers cannot be read ahead of time.</li>
+  <li>Access to production data is limited to the developer named in section 1.</li>
+</ul>
+
+<p>No system is perfectly secure. If a breach ever affects your personal data, we will notify you
+and the relevant supervisory authority as required by law.</p>
+
+<h2 id="children">14. Children</h2>
+
+<p>CertSage is intended for adults pursuing professional technology certifications. It is not
+directed to children, and we do not knowingly collect personal data from anyone under 16. If you
+believe a child has created an account, email us and we will delete it. Where local law sets a
+lower age of digital consent, that lower age applies.</p>
+
+<h2 id="changes">15. Changes to this policy</h2>
+
+<p>We will update this page when the app changes, and revise the date at the top. If a change
+materially affects how we use your personal data — for example adding voice input, push
+notifications or a new AI provider — we will tell you in the app or by email before it takes
+effect. Previous versions are available in this page's public
+<a href="https://github.com/BryanLe2811/certsage-legal/commits/main/privacy.html" rel="noopener">revision
+history</a>.</p>
+
+<h2 id="contact">16. Contact us</h2>
+
+<div class="card">
+  <p><strong>Van Manh Le</strong><br>
+  Publisher of CertSage<br>
+  Australia</p>
+  <p style="margin-bottom:0">
+  <a class="contact-mail" href="mailto:support.certsage@integolutions.com">support.certsage@integolutions.com</a></p>
+</div>
+
+<footer>
+  <p>CertSage &middot; <a href="index.html">All legal documents</a> &middot;
+     <a href="delete-account.html">Delete your account</a></p>
+</footer>
+
+</div>
+</body>
+</html>
