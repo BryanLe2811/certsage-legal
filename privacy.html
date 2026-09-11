@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Privacy Policy</h1>
-  <p class="dates">Last updated: 4 September 2026 &middot; Effective: 4 September 2026</p>
+  <p class="dates">Last updated: 11 September 2026 &middot; Effective: 11 September 2026</p>
 </header>
 
 
@@ -53,7 +53,7 @@ official certification documentation.</p>
     <tr><td>Do you show ads?</td><td>No. There is no advertising SDK and no advertising identifier is collected.</td></tr>
     <tr><td>Do you sell my data?</td><td>No. We do not sell or rent personal data, and we do not share it for cross-context behavioural advertising.</td></tr>
     <tr><td>Do you track me across other apps?</td><td>No.</td></tr>
-    <tr><td>Do you use third-party analytics?</td><td>No analytics or crash-reporting SDK is embedded in the app.</td></tr>
+    <tr><td>Do you use third-party analytics?</td><td>No. There is no analytics or advertising SDK, and nothing you do in the app is tracked for marketing. We do embed one diagnostic tool — <strong>Sentry</strong>, which reports crashes and performance problems. See <a href="#third-parties">section 7</a>.</td></tr>
     <tr><td>Does an AI see my messages?</td><td>Yes — your coaching conversations are sent to Anthropic to generate replies. See <a href="#ai">section 6</a>.</td></tr>
     <tr><td>Can I get everything deleted?</td><td>Yes. Email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
     <tr><td>Do you see my card details?</td><td>Never. Payment is handled entirely by Google Play or Apple.</td></tr>
@@ -127,6 +127,21 @@ official certification documentation.</p>
       enforce fair-use limits — not to profile you.</li>
   <li>Standard server logs kept by our hosting provider, which include IP addresses and request
       timestamps, used for security, abuse prevention and debugging.</li>
+  <li><strong>Crash, error and performance diagnostics</strong>, collected through
+      <a href="https://sentry.io/privacy/" rel="noopener">Sentry</a>. When the app or one of our
+      server functions fails, a report is created so we can fix it without needing you to reproduce
+      the problem. A report contains: your account identifier (the same internal ID described in
+      3a — <em>not</em> your email or your name), which subscription plan you are on, the screens
+      you visited before the failure, which of our own server functions was called and the HTTP
+      status it answered with, your device model, operating-system version and app version, the
+      technical name of the error and how long each step took. Performance traces of ordinary,
+      successful requests are collected in the same way.
+      <br><br>
+      <strong>It never receives the content of anything you wrote or read</strong> — not your
+      coaching messages, not quiz questions or answers, not your study motivation, not your name
+      and not your email address. Where a failure involves a piece of text, we deliberately send
+      only its <em>length</em> and never the text itself. We have also disabled IP-address storage
+      on our Sentry account, so your IP is not retained there.</li>
 </ul>
 
 <h2 id="not-collected">4. What we do not collect</h2>
@@ -141,7 +156,13 @@ official certification documentation.</p>
   <li><strong>No microphone or camera access.</strong> The Android app does not request the
       <code>RECORD_AUDIO</code> or <code>CAMERA</code> permission. Voice input is planned for a
       future version; this policy will be updated before it ships.</li>
-  <li><strong>No third-party analytics or crash-reporting SDK</strong> is embedded in the app.</li>
+  <li><strong>No third-party analytics or advertising SDK</strong> is embedded in the app. Nothing
+      records which screens you browse in order to profile you or to measure a marketing campaign.
+      <em>One diagnostic SDK is embedded</em> — Sentry, which reports crashes, errors and
+      performance timings so we can fix faults without having to ask you to reproduce them. What it
+      receives is described in <a href="#what-we-collect">section 3e</a> and
+      <a href="#third-parties">section 7</a>; it is never sent your messages, your quiz answers,
+      your name or your email address.</li>
   <li><strong>No push notification tokens</strong> are currently collected. Push is not active
       in this version.</li>
   <li><strong>No health, financial, biometric, racial, religious, political or sexual-orientation
@@ -257,6 +278,15 @@ bound by a data processing agreement, and receives only what it needs.</p>
       <td>United States</td>
     </tr>
     <tr>
+      <td><a href="https://sentry.io/privacy/" rel="noopener">Sentry</a></td>
+      <td>Crash, error and performance diagnostics</td>
+      <td>Account identifier, subscription plan, screens visited, which of our server functions was
+          called and what it answered, device and app version, error type and timings — as listed in
+          section 3e. No message content, no quiz content, no name or email address. IP-address
+          storage is disabled.</td>
+      <td>United States</td>
+    </tr>
+    <tr>
       <td><a href="https://policies.google.com/privacy" rel="noopener">Google Play</a></td>
       <td>App distribution and payment processing</td>
       <td>Your purchase details, handled entirely under Google's own policy</td>
@@ -304,8 +334,8 @@ before that happened and given the opportunity to delete your account first.</p>
 <h2 id="transfers">9. International data transfers</h2>
 
 <p>Our database, authentication and file storage are hosted in <strong>Singapore</strong>
-(Supabase region <code>ap-southeast-1</code>). Anthropic, OpenAI and RevenueCat are based in the
-<strong>United States</strong>. Using CertSage therefore involves transferring personal data
+(Supabase region <code>ap-southeast-1</code>). Anthropic, OpenAI, RevenueCat and Sentry are based
+in the <strong>United States</strong>. Using CertSage therefore involves transferring personal data
 outside the UK, the EEA and Australia, to countries that do not have a UK or EU adequacy
 decision.</p>
 
@@ -331,17 +361,35 @@ emailing us.</p>
         <td><strong>Retained after account deletion, with the link to your account removed</strong> — see the note below.</td></tr>
     <tr><td>Server logs</td>
         <td>Per our hosting provider's retention schedule, typically a short rolling window.</td></tr>
+    <tr><td>Crash, error and performance diagnostics (Sentry)</td>
+        <td>A rolling <strong>90 days</strong>, after which Sentry deletes them automatically. These
+            are keyed to your account identifier, so deleting your account does not erase reports
+            created before it — see the note below.</td></tr>
   </tbody>
 </table>
 </div>
 
 <div class="callout">
-  <p style="margin-bottom:0"><strong>The one exception, stated plainly.</strong> When you delete
-  your account, our AI cost records and raw billing event logs are not destroyed — the reference
-  to your account is set to null, so the rows survive as <em>anonymised</em> financial and
-  operational records with no way to tie them back to you. We keep them because accurate cost and
-  billing history has to outlive the accounts it came from. Everything that identifies you is
-  removed.</p>
+  <p><strong>The exceptions, stated plainly.</strong> Deleting your account removes everything that
+  identifies you and everything you wrote. Three kinds of record are not destroyed by it, and we
+  would rather describe them precisely than claim more than is true.</p>
+
+  <p><strong>AI cost records.</strong> The reference to your account is set to null, leaving a model
+  name, token counts, a cost and a timestamp with nothing in the row that points back to you. We
+  keep them because accurate cost history has to outlive the accounts it came from.</p>
+
+  <p><strong>Raw billing event logs.</strong> The account reference is likewise set to null, but the
+  stored copy of the original event from our subscription provider still contains the internal
+  identifier your account used. Removing the link makes these records <em>pseudonymous</em> rather
+  than anonymous: they hold no email address, no name and nothing you wrote, but we will not claim
+  the identifier is gone when it is not. We keep them verbatim because a payment dispute can only be
+  reconstructed from the original event.</p>
+
+  <p style="margin-bottom:0"><strong>Crash and performance diagnostics.</strong> Reports created
+  before you deleted your account remain with Sentry until their 90-day retention expires, and they
+  are keyed to the same account identifier — pseudonymous, for the same reason as above. They contain
+  no message content, no quiz content, no name and no email address. If you would like them removed
+  before that window expires, email us and we will delete them.</p>
 </div>
 
 <h2 id="rights">11. Your rights</h2>

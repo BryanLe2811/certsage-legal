@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Delete your account and data</h1>
-  <p class="dates">Last updated: 4 September 2026</p>
+  <p class="dates">Last updated: 11 September 2026</p>
 </header>
 
 <p class="lede">You can delete your CertSage account and everything associated with it, at any time,
@@ -81,7 +81,9 @@ an export <em>before</em> requesting deletion.</p>
 
 <h2 id="what-is-kept">What is kept, and why</h2>
 
-<p>Two categories of record survive, both with every link to you removed:</p>
+<p>Three categories of record survive. In each case the link to your account is removed or the
+record never carried your identity in the first place — but we describe them precisely rather than
+calling them all anonymous, because one of them is not quite:</p>
 
 <div class="scroller">
 <table>
@@ -98,14 +100,30 @@ an export <em>before</em> requesting deletion.</p>
     </tr>
     <tr>
       <td>Billing event logs</td>
-      <td>Same — de-linked from your account and retained as anonymised financial records.</td>
-      <td>Required for tax, accounting and resolving payment disputes.</td>
+      <td>The reference to your account is set to null. The stored copy of the original event from
+          our subscription provider still contains the internal identifier your account used, so
+          these are <strong>pseudonymous rather than anonymous</strong> — we keep the event exactly
+          as it arrived.</td>
+      <td>Required for tax, accounting and resolving payment disputes, which can only be
+          reconstructed from the original event.</td>
+    </tr>
+    <tr>
+      <td>Crash and performance reports</td>
+      <td>Reports created before you deleted your account stay with our diagnostics provider
+          (<a href="https://sentry.io/privacy/" rel="noopener">Sentry</a>) until their
+          <strong>90-day</strong> retention expires, then delete automatically. They are keyed to
+          the same internal identifier, so these are <strong>pseudonymous</strong> too. Ask us and
+          we will delete them sooner.</td>
+      <td>They exist to diagnose faults. We cannot fix a crash we can no longer see, and the
+          window is short and self-clearing.</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-<p>Neither record contains your email address, your name, your messages or your study history.</p>
+<p>None of these contain your email address, your name, your messages, your quiz answers or your
+study history. What the last two retain is an internal identifier — the same one your account used
+— with nothing left that maps it back to a person.</p>
 
 <p>Separately, our providers keep their own records under their own policies and retention
 schedules — <a href="https://policies.google.com/privacy" rel="noopener">Google Play</a> for
