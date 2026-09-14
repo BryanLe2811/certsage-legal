@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Privacy Policy</h1>
-  <p class="dates">Last updated: 11 September 2026 &middot; Effective: 11 September 2026</p>
+  <p class="dates">Last updated: 15 September 2026 &middot; Effective: 15 September 2026</p>
 </header>
 
 
@@ -53,7 +53,7 @@ official certification documentation.</p>
     <tr><td>Do you show ads?</td><td>No. There is no advertising SDK and no advertising identifier is collected.</td></tr>
     <tr><td>Do you sell my data?</td><td>No. We do not sell or rent personal data, and we do not share it for cross-context behavioural advertising.</td></tr>
     <tr><td>Do you track me across other apps?</td><td>No.</td></tr>
-    <tr><td>Do you use third-party analytics?</td><td>No. There is no analytics or advertising SDK, and nothing you do in the app is tracked for marketing. We do embed one diagnostic tool — <strong>Sentry</strong>, which reports crashes and performance problems. See <a href="#third-parties">section 7</a>.</td></tr>
+    <tr><td>Do you use third-party analytics?</td><td>Yes, for the product — never for marketing. Two tools are embedded: <strong>Sentry</strong>, which reports crashes and performance problems, and <strong>PostHog</strong>, which records which features you use and when, so we can see where the app is working and where people get stuck. Neither is an advertising SDK, neither tracks you across other apps, and neither receives what you wrote or read. See <a href="#third-parties">section 7</a>.</td></tr>
     <tr><td>Does an AI see my messages?</td><td>Yes — your coaching conversations are sent to Anthropic to generate replies. See <a href="#ai">section 6</a>.</td></tr>
     <tr><td>Can I get everything deleted?</td><td>Yes. Email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
     <tr><td>Do you see my card details?</td><td>Never. Payment is handled entirely by Google Play or Apple.</td></tr>
@@ -142,6 +142,26 @@ official certification documentation.</p>
       and not your email address. Where a failure involves a piece of text, we deliberately send
       only its <em>length</em> and never the text itself. We have also disabled IP-address storage
       on our Sentry account, so your IP is not retained there.</li>
+  <li><strong>Product analytics</strong>, collected through
+      <a href="https://posthog.com/privacy" rel="noopener">PostHog</a>. This records <em>which
+      features you use and when</em>, so we can see where the app helps and where people get stuck.
+      It is a fixed, named list of about twenty moments — you signed up, completed your
+      profile, chose a certification, started a study session, finished one, answered a quiz
+      question, saw the upgrade screen, started or completed a purchase, deleted your account —
+      together with the names of the screens you visited and a timestamp. Each is attached to the
+      same internal account identifier described in 3a, alongside three facts about you: which
+      subscription plan you are on, which certification you are studying, and the occupation you
+      chose at sign-up.
+      <br><br>
+      <strong>It never receives the content of anything you wrote or read</strong> — not your
+      coaching messages, not the text of any quiz question, option or answer, not the articles or
+      narration scripts, not your study motivation, not your name and not your email address. It
+      does receive some <em>figures</em> about your performance, and we would rather name them than
+      let "no learning data" stand: whether a quiz answer was right or wrong, your
+      percentage score on a completed practice exam, and your readiness percentage at the moment the
+      pre-exam confirmation appears. Numbers only, never the question they came from. We have also
+      enabled <em>Discard client IP data</em> on our PostHog account, so your IP address is not
+      retained there.</li>
 </ul>
 
 <h2 id="not-collected">4. What we do not collect</h2>
@@ -156,13 +176,17 @@ official certification documentation.</p>
   <li><strong>No microphone or camera access.</strong> The Android app does not request the
       <code>RECORD_AUDIO</code> or <code>CAMERA</code> permission. Voice input is planned for a
       future version; this policy will be updated before it ships.</li>
-  <li><strong>No third-party analytics or advertising SDK</strong> is embedded in the app. Nothing
-      records which screens you browse in order to profile you or to measure a marketing campaign.
-      <em>One diagnostic SDK is embedded</em> — Sentry, which reports crashes, errors and
-      performance timings so we can fix faults without having to ask you to reproduce them. What it
-      receives is described in <a href="#what-we-collect">section 3e</a> and
-      <a href="#third-parties">section 7</a>; it is never sent your messages, your quiz answers,
-      your name or your email address.</li>
+  <li><strong>No advertising SDK</strong> is embedded, no advertising identifier is collected, and
+      nothing you do is used to profile you for advertising or to measure a marketing campaign. We
+      do not track you across other apps or websites.</li>
+  <li><strong>Two third-party SDKs are embedded, and neither of them is an advertising one.</strong>
+      Sentry reports crashes, errors and performance timings so we can fix faults without having to
+      ask you to reproduce them; PostHog records which features you use and when, so we can tell
+      which parts of the app are working. So it is true that the screens you visit are recorded —
+      to improve the product, never to advertise to you. What each receives is described in
+      <a href="#what-we-collect">section 3e</a> and <a href="#third-parties">section 7</a>; neither
+      is ever sent your messages, the text of your quiz questions or answers, your name or your
+      email address.</li>
   <li><strong>No push notification tokens</strong> are currently collected. Push is not active
       in this version.</li>
   <li><strong>No health, financial, biometric, racial, religious, political or sexual-orientation
@@ -287,6 +311,16 @@ bound by a data processing agreement, and receives only what it needs.</p>
       <td>United States</td>
     </tr>
     <tr>
+      <td><a href="https://posthog.com/privacy" rel="noopener">PostHog</a></td>
+      <td>Product analytics — which features are used and when</td>
+      <td>Account identifier, subscription plan, active certification track, occupation, the named
+          product events listed in section 3e, the screen names you visited, and figures about your
+          performance (whether a quiz answer was correct, exam score percentage, readiness
+          percentage). No message content, no quiz or article text, no name or email address.
+          Client IP addresses are discarded on collection.</td>
+      <td>United States</td>
+    </tr>
+    <tr>
       <td><a href="https://policies.google.com/privacy" rel="noopener">Google Play</a></td>
       <td>App distribution and payment processing</td>
       <td>Your purchase details, handled entirely under Google's own policy</td>
@@ -323,6 +357,8 @@ before that happened and given the opportunity to delete your account first.</p>
         <td><strong>Consent</strong> — Art. 6(1)(a). You may leave them blank or choose "Prefer not to say", and withdraw at any time by clearing them in Settings.</td></tr>
     <tr><td>Security, abuse prevention, fair-use enforcement, cost control, fixing faults</td>
         <td><strong>Legitimate interests</strong> — Art. 6(1)(f). We have balanced these against your rights and consider the impact minimal.</td></tr>
+    <tr><td>Understanding which features are used, so we can improve the app</td>
+        <td><strong>Legitimate interests</strong> — Art. 6(1)(f). These records are pseudonymous, contain nothing you wrote or read, and are never used to advertise to you, to build a marketing profile or to make a decision about you. You have the right to object (<a href="#rights">section 11</a>): email us and we will delete the analytics record held for your account. CertSage is currently in limited testing; an in-app control to turn product analytics off will be added before the app is generally released.</td></tr>
     <tr><td>Keeping financial and subscription records</td>
         <td><strong>Legal obligation</strong> — Art. 6(1)(c)</td></tr>
   </tbody>
@@ -334,7 +370,7 @@ before that happened and given the opportunity to delete your account first.</p>
 <h2 id="transfers">9. International data transfers</h2>
 
 <p>Our database, authentication and file storage are hosted in <strong>Singapore</strong>
-(Supabase region <code>ap-southeast-1</code>). Anthropic, OpenAI, RevenueCat and Sentry are based
+(Supabase region <code>ap-southeast-1</code>). Anthropic, OpenAI, RevenueCat, Sentry and PostHog are based
 in the <strong>United States</strong>. Using CertSage therefore involves transferring personal data
 outside the UK, the EEA and Australia, to countries that do not have a UK or EU adequacy
 decision.</p>
@@ -365,13 +401,17 @@ emailing us.</p>
         <td>A rolling <strong>90 days</strong>, after which Sentry deletes them automatically. These
             are keyed to your account identifier, so deleting your account does not erase reports
             created before it — see the note below.</td></tr>
+    <tr><td>Product analytics events (PostHog)</td>
+        <td>A rolling <strong>1 year</strong>, after which they are deleted. These are keyed to your
+            account identifier, so deleting your account does not erase events already sent —
+            see the note below.</td></tr>
   </tbody>
 </table>
 </div>
 
 <div class="callout">
   <p><strong>The exceptions, stated plainly.</strong> Deleting your account removes everything that
-  identifies you and everything you wrote. Three kinds of record are not destroyed by it, and we
+  identifies you and everything you wrote. Four kinds of record are not destroyed by it, and we
   would rather describe them precisely than claim more than is true.</p>
 
   <p><strong>AI cost records.</strong> The reference to your account is set to null, leaving a model
@@ -385,11 +425,20 @@ emailing us.</p>
   the identifier is gone when it is not. We keep them verbatim because a payment dispute can only be
   reconstructed from the original event.</p>
 
-  <p style="margin-bottom:0"><strong>Crash and performance diagnostics.</strong> Reports created
+  <p><strong>Crash and performance diagnostics.</strong> Reports created
   before you deleted your account remain with Sentry until their 90-day retention expires, and they
   are keyed to the same account identifier — pseudonymous, for the same reason as above. They contain
   no message content, no quiz content, no name and no email address. If you would like them removed
   before that window expires, email us and we will delete them.</p>
+
+  <p style="margin-bottom:0"><strong>Product analytics events.</strong> These differ from the three
+  above in one way we should be plain about: <strong>nothing is set to null</strong>. Deleting your
+  account stops any further activity being attributed to you, but the analytics record already held
+  by PostHog — the events listed in section 3e and the three facts attached to them — stays as
+  it is, keyed to the same internal identifier, until its 1-year retention expires. That makes it
+  pseudonymous, like the two records above. It holds no email address, no name and nothing you
+  wrote. If you would like it removed before that window expires, email us and we will delete
+  it.</p>
 </div>
 
 <h2 id="rights">11. Your rights</h2>
@@ -458,7 +507,7 @@ lower age of digital consent, that lower age applies.</p>
 materially affects how we use your personal data — for example adding voice input, push
 notifications or a new AI provider — we will tell you in the app or by email before it takes
 effect. Previous versions are available in this page's public
-<a href="https://github.com/BryanLe2811/certsage-legal/commits/main/privacy.html" rel="noopener">revision
+<a href="https://github.com/BryanLe2811/certsage-legal/commits/master/privacy.html" rel="noopener">revision
 history</a>.</p>
 
 <h2 id="contact">16. Contact us</h2>

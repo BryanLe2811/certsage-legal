@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Delete your account and data</h1>
-  <p class="dates">Last updated: 11 September 2026</p>
+  <p class="dates">Last updated: 15 September 2026</p>
 </header>
 
 <p class="lede">You can delete your CertSage account and everything associated with it, at any time,
@@ -81,9 +81,10 @@ an export <em>before</em> requesting deletion.</p>
 
 <h2 id="what-is-kept">What is kept, and why</h2>
 
-<p>Three categories of record survive. In each case the link to your account is removed or the
-record never carried your identity in the first place — but we describe them precisely rather than
-calling them all anonymous, because one of them is not quite:</p>
+<p>Four categories of record survive. For the first three, the link to your account is removed. The
+fourth is different and we would rather say so than bury it: the analytics record is left as it is
+and ages out on its own. We describe each precisely rather than calling them all anonymous, because
+two of them are not quite:</p>
 
 <div class="scroller">
 <table>
@@ -117,13 +118,26 @@ calling them all anonymous, because one of them is not quite:</p>
       <td>They exist to diagnose faults. We cannot fix a crash we can no longer see, and the
           window is short and self-clearing.</td>
     </tr>
+    <tr>
+      <td>Product analytics records</td>
+      <td><strong>Nothing is set to null here.</strong> Deleting your account stops further activity
+          being attributed to you, but the record already held by our analytics provider
+          (<a href="https://posthog.com/privacy" rel="noopener">PostHog</a>) stays as it is until its
+          <strong>1-year</strong> retention expires, then deletes automatically. It is keyed to the
+          same internal identifier, so it is <strong>pseudonymous</strong> too. Ask us and we will
+          delete it sooner.</td>
+      <td>Knowing which features people use, and where they get stuck, is how the app gets better.
+          It holds no message, quiz or article text.</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
-<p>None of these contain your email address, your name, your messages, your quiz answers or your
-study history. What the last two retain is an internal identifier — the same one your account used
-— with nothing left that maps it back to a person.</p>
+<p>None of these contain your email address, your name, your messages, or the text of any quiz
+question, answer or article. The analytics record is the one that holds anything about your studying,
+and only as figures: that a session started or finished, that an answer was right or wrong, an exam
+score, a readiness percentage. What the last three retain is an internal identifier — the same one
+your account used — with nothing left that maps it back to a person.</p>
 
 <p>Separately, our providers keep their own records under their own policies and retention
 schedules — <a href="https://policies.google.com/privacy" rel="noopener">Google Play</a> for
