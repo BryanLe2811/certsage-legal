@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Delete your account and data</h1>
-  <p class="dates">Last updated: 15 September 2026</p>
+  <p class="dates">Last updated: 26 September 2026</p>
 </header>
 
 <p class="lede">You can delete your CertSage account and everything associated with it, at any time,
@@ -81,10 +81,11 @@ an export <em>before</em> requesting deletion.</p>
 
 <h2 id="what-is-kept">What is kept, and why</h2>
 
-<p>Four categories of record survive. For the first three, the link to your account is removed. The
-fourth is different and we would rather say so than bury it: the analytics record is left as it is
-and ages out on its own. We describe each precisely rather than calling them all anonymous, because
-two of them are not quite:</p>
+<p>Five categories of record survive. For the three we hold ourselves, the reference to your
+account is set to null. The two held by our diagnostics and analytics providers are not altered at
+all — they simply age out on their own schedule. We describe each precisely rather than calling them
+all anonymous, because only the first of them is: <strong>four are pseudonymous, and the last can
+still contain something you typed.</strong></p>
 
 <div class="scroller">
 <table>
@@ -129,20 +130,39 @@ two of them are not quite:</p>
       <td>Knowing which features people use, and where they get stuck, is how the app gets better.
           It holds no message, quiz or article text.</td>
     </tr>
+    <tr>
+      <td>Reports you sent us</td>
+      <td>The reference to your account is set to null, but <strong>the report itself is kept — the
+          words you wrote</strong>, and for a wrong-question report the question and the answer you
+          gave. That makes it <strong>pseudonymous</strong>, and it is the one surviving record that
+          can contain something you typed. Ask us and we will delete it, and the copy in our support
+          inbox with it.</td>
+      <td>A report may still describe a fault we have not fixed yet. Deleting it would destroy the
+          only record that we were ever told, and a wrong question would go on being asked.</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
-<p>None of these contain your email address, your name, your messages, or the text of any quiz
-question, answer or article. The analytics record is the one that holds anything about your studying,
-and only as figures: that a session started or finished, that an answer was right or wrong, an exam
-score, a readiness percentage. What the last three retain is an internal identifier — the same one
-your account used — with nothing left that maps it back to a person.</p>
+<p>Four of the five contain nothing you wrote. What they retain is an internal identifier — the
+same one your account used — with nothing left beside it that maps back to a person, plus, in the
+analytics record, figures about your studying and only figures: that a session started or finished,
+that an answer was right or wrong, an exam score, a readiness percentage. Never the question those
+figures came from, never your messages to the coach, and never your name or email address.</p>
+
+<p><strong>A report you sent us is the exception, because it is your own writing by definition.</strong>
+The stored report has no field for your name or your email address — those travel with the email
+rather than into the record — but anything you typed into the message stays in the message, including
+an address or a name if you put one there. The copy that reached our support inbox keeps whatever the
+email carried, which does include the address we would have replied to. Ask us and we will delete
+both.</p>
 
 <p>Separately, our providers keep their own records under their own policies and retention
 schedules — <a href="https://policies.google.com/privacy" rel="noopener">Google Play</a> for
-purchases, and <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> for
-subscription state. We can ask them to delete on your behalf but cannot do it directly.</p>
+purchases, <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> for
+subscription state, and <a href="https://www.make.com/en/privacy-notice" rel="noopener">Make</a>
+(make.com) for the delivery of any report you sent us. We can ask them to delete on your behalf but
+cannot do it directly.</p>
 
 <h2 id="subscription">If you have a paid subscription</h2>
 

@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Privacy Policy</h1>
-  <p class="dates">Last updated: 15 September 2026 &middot; Effective: 15 September 2026</p>
+  <p class="dates">Last updated: 26 September 2026 &middot; Effective: 26 September 2026</p>
 </header>
 
 
@@ -55,7 +55,8 @@ official certification documentation.</p>
     <tr><td>Do you track me across other apps?</td><td>No.</td></tr>
     <tr><td>Do you use third-party analytics?</td><td>Yes, for the product — never for marketing. Two tools are embedded: <strong>Sentry</strong>, which reports crashes and performance problems, and <strong>PostHog</strong>, which records which features you use and when, so we can see where the app is working and where people get stuck. Neither is an advertising SDK, neither tracks you across other apps, and neither receives what you wrote or read. See <a href="#third-parties">section 7</a>.</td></tr>
     <tr><td>Does an AI see my messages?</td><td>Yes — your coaching conversations are sent to Anthropic to generate replies. See <a href="#ai">section 6</a>.</td></tr>
-    <tr><td>Can I get everything deleted?</td><td>Yes. Email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
+    <tr><td>What happens when I report a bug or a wrong answer?</td><td>Your message is stored on our servers and emailed to us through <strong>Make</strong> (make.com), an automation service in the EU. It carries your email address and preferred name so we can reply, plus your plan, app version and device type — and, if you are reporting a <em>question</em>, that question, its options, your answer and the correct one. Nothing is sent unless you choose to send a report. See <a href="#what-we-collect">section 3f</a>.</td></tr>
+    <tr><td>Can I get everything deleted?</td><td>Yes. There is a <strong>Delete account</strong> button in the app that takes effect the moment you confirm it — nothing is queued and nobody reviews it. If you have already uninstalled, email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
     <tr><td>Do you see my card details?</td><td>Never. Payment is handled entirely by Google Play or Apple.</td></tr>
   </tbody>
 </table>
@@ -69,9 +70,10 @@ official certification documentation.</p>
   <li><strong>Password</strong> — only if you sign up with email and password. It is stored by
       our authentication provider as a salted hash. It is never visible to us and cannot be
       recovered, only reset.</li>
-  <li><strong>Google or Apple sign-in identity</strong> — if you choose that route, we receive
-      the account identifier, your email address, and the display name and profile picture URL
-      those services choose to return. We do not receive your password.</li>
+  <li><strong>Google sign-in identity</strong> — if you choose that route, we receive the
+      account identifier, your email address, and the display name and profile picture URL Google
+      chooses to return. We do not receive your password. Sign in with Apple is not offered in this
+      version; if it is added, this policy will be updated before it ships.</li>
   <li><strong>Preferred name</strong> — what you would like the app to call you. Asked once,
       after sign-up.</li>
   <li><strong>Occupation</strong> — chosen from a fixed list of ten options, one of which is
@@ -164,6 +166,34 @@ official certification documentation.</p>
       retained there.</li>
 </ul>
 
+<h3>f. Reports you send us</h3>
+<p>Settings has a <em>Report a bug</em> and a <em>Contact support</em> option, and every screen that
+reveals a quiz answer carries a <em>Report this question</em> control. <strong>Nothing in this
+section is collected unless you choose to send a report.</strong></p>
+<ul>
+  <li><strong>What you wrote</strong>, in your own words, and which of the three kinds of report it
+      is. Please do not put sensitive personal information in this field — it is emailed to us and a
+      copy is stored on our servers, so that a report is never lost if the email fails and so we can
+      quote a reference back to you.</li>
+  <li><strong>Your email address and your preferred name</strong>, so that we can reply. This is the
+      only time either of them leaves our own systems to any provider other than our host, and it
+      happens because a support request nobody can answer is not a support request.</li>
+  <li>Your subscription plan, your time zone, your active certification, and the app version, patch
+      level, platform, operating-system version and language your device reported.</li>
+  <li><strong>For a wrong-question report only:</strong> the question, its answer options, which
+      option is marked correct, the answer you gave, whether it was correct, the written explanation,
+      and the concept, sub-topic and exam domain the question sits under.
+      <br><br>
+      That block is <strong>assembled on our server from your own attempt</strong> rather than sent
+      up from your phone. The app is deliberately never given the identifier of the underlying
+      question, so a report composed on the device could only ever say <em>&ldquo;that question
+      looked wrong&rdquo;</em> — which is not enough to find the question and fix it for everyone
+      else.</li>
+</ul>
+<p>The email itself is delivered by
+<a href="https://www.make.com/en/privacy-notice" rel="noopener">Make</a> (make.com), an automation
+service we use for this one purpose. See <a href="#third-parties">section 7</a>.</p>
+
 <h2 id="not-collected">4. What we do not collect</h2>
 
 <p>Stated explicitly because the absence is a design decision, not an oversight:</p>
@@ -186,7 +216,10 @@ official certification documentation.</p>
       to improve the product, never to advertise to you. What each receives is described in
       <a href="#what-we-collect">section 3e</a> and <a href="#third-parties">section 7</a>; neither
       is ever sent your messages, the text of your quiz questions or answers, your name or your
-      email address.</li>
+      email address. These two are the only third-party SDKs <em>inside</em> the app. One further
+      provider, Make, does receive your email address and your own words — but only at the moment
+      you choose to send us a report, and never from your device directly; see
+      <a href="#what-we-collect">section 3f</a>.</li>
   <li><strong>No push notification tokens</strong> are currently collected. Push is not active
       in this version.</li>
   <li><strong>No health, financial, biometric, racial, religious, political or sexual-orientation
@@ -207,7 +240,10 @@ foreground service, and notification display. None of them read personal data fr
   <li>To apply your subscription entitlements and enforce free-tier usage limits fairly.</li>
   <li>To keep the service running and affordable — monitoring AI cost per user, diagnosing
       failures, and preventing abuse.</li>
-  <li>To respond when you contact us.</li>
+  <li>To receive, triage and answer the bug reports, support requests and wrong-question reports
+      you send us — and, where you report a faulty question, to correct that question. Questions are
+      drawn from a shared bank, so fixing one fixes it for every learner who would have been asked
+      it.</li>
 </ul>
 
 <p>We do not use your data to build advertising profiles, and we do not use your study data for
@@ -321,14 +357,23 @@ bound by a data processing agreement, and receives only what it needs.</p>
       <td>United States</td>
     </tr>
     <tr>
+      <td><a href="https://www.make.com/en/privacy-notice" rel="noopener">Make</a> (make.com)</td>
+      <td>Delivering the bug, support and wrong-question reports you send, to our support inbox</td>
+      <td>Your report and the words you wrote, your email address and preferred name, your plan,
+          time zone, active certification, and your app and device version — and, for a
+          wrong-question report, the question, its options, the correct answer, your answer and the
+          explanation, as listed in section 3f. <strong>It receives nothing at all unless you send a
+          report.</strong></td>
+      <td>European Union</td>
+    </tr>
+    <tr>
       <td><a href="https://policies.google.com/privacy" rel="noopener">Google Play</a></td>
       <td>App distribution and payment processing</td>
       <td>Your purchase details, handled entirely under Google's own policy</td>
       <td>Global</td>
     </tr>
     <tr>
-      <td><a href="https://policies.google.com/privacy" rel="noopener">Google</a> /
-          <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> sign-in</td>
+      <td><a href="https://policies.google.com/privacy" rel="noopener">Google</a> sign-in</td>
       <td>Optional authentication</td>
       <td>Only used if you choose that sign-in method</td>
       <td>Global</td>
@@ -359,6 +404,8 @@ before that happened and given the opportunity to delete your account first.</p>
         <td><strong>Legitimate interests</strong> — Art. 6(1)(f). We have balanced these against your rights and consider the impact minimal.</td></tr>
     <tr><td>Understanding which features are used, so we can improve the app</td>
         <td><strong>Legitimate interests</strong> — Art. 6(1)(f). These records are pseudonymous, contain nothing you wrote or read, and are never used to advertise to you, to build a marketing profile or to make a decision about you. You have the right to object (<a href="#rights">section 11</a>): email us and we will delete the analytics record held for your account. CertSage is currently in limited testing; an in-app control to turn product analytics off will be added before the app is generally released.</td></tr>
+    <tr><td>Receiving and answering a report you send us, and using a wrong-question report to correct the question</td>
+        <td><strong>Performance of a contract</strong> — Art. 6(1)(b) for answering you, and <strong>legitimate interests</strong> — Art. 6(1)(f) for using what you tell us to fix a fault for every learner. We have named both rather than choosing the tidier one. What you report is not used for any other purpose, and never to advertise to you.</td></tr>
     <tr><td>Keeping financial and subscription records</td>
         <td><strong>Legal obligation</strong> — Art. 6(1)(c)</td></tr>
   </tbody>
@@ -371,9 +418,14 @@ before that happened and given the opportunity to delete your account first.</p>
 
 <p>Our database, authentication and file storage are hosted in <strong>Singapore</strong>
 (Supabase region <code>ap-southeast-1</code>). Anthropic, OpenAI, RevenueCat, Sentry and PostHog are based
-in the <strong>United States</strong>. Using CertSage therefore involves transferring personal data
-outside the UK, the EEA and Australia, to countries that do not have a UK or EU adequacy
-decision.</p>
+in the <strong>United States</strong>. Make, which delivers the reports you send us, processes them
+in the <strong>European Union</strong>. Using CertSage therefore involves transferring personal data
+outside the UK, the EEA and Australia — and, in the case of Singapore and the United States, to
+countries that do not have a UK or EU adequacy decision.</p>
+
+<p>Make is the one exception, and it is worth naming rather than lumping in: for a learner in the UK
+or the EEA, sending us a report is not a restricted transfer at all. For a learner in Australia it
+remains an overseas disclosure.</p>
 
 <p>Those transfers are made under the European Commission's <strong>Standard Contractual
 Clauses</strong> (and the UK International Data Transfer Addendum where applicable), incorporated
@@ -395,6 +447,8 @@ emailing us.</p>
         <td>Deleted with your account. RevenueCat and Google retain their own records under their own policies.</td></tr>
     <tr><td>AI cost records and billing event logs</td>
         <td><strong>Retained after account deletion, with the link to your account removed</strong> — see the note below.</td></tr>
+    <tr><td>Reports you send us, and what we assembled in order to answer them</td>
+        <td>As long as your account exists, and <strong>kept after you delete it, with the link to your account removed</strong> — see the note below. The emailed copy stays in our support inbox under our ordinary mail retention.</td></tr>
     <tr><td>Server logs</td>
         <td>Per our hosting provider's retention schedule, typically a short rolling window.</td></tr>
     <tr><td>Crash, error and performance diagnostics (Sentry)</td>
@@ -410,9 +464,11 @@ emailing us.</p>
 </div>
 
 <div class="callout">
-  <p><strong>The exceptions, stated plainly.</strong> Deleting your account removes everything that
-  identifies you and everything you wrote. Four kinds of record are not destroyed by it, and we
-  would rather describe them precisely than claim more than is true.</p>
+  <p><strong>The exceptions, stated plainly.</strong> Deleting your account removes your profile,
+  your study history and everything you wrote inside the product — your coaching messages, your
+  answers, the motivation you described. <strong>Five</strong> kinds of record are not destroyed by
+  it, and we would rather describe them precisely than claim more than is true. One of the five can
+  still contain something you typed, and it is named last for exactly that reason.</p>
 
   <p><strong>AI cost records.</strong> The reference to your account is set to null, leaving a model
   name, token counts, a cost and a timestamp with nothing in the row that points back to you. We
@@ -431,7 +487,7 @@ emailing us.</p>
   no message content, no quiz content, no name and no email address. If you would like them removed
   before that window expires, email us and we will delete them.</p>
 
-  <p style="margin-bottom:0"><strong>Product analytics events.</strong> These differ from the three
+  <p><strong>Product analytics events.</strong> These differ from the three
   above in one way we should be plain about: <strong>nothing is set to null</strong>. Deleting your
   account stops any further activity being attributed to you, but the analytics record already held
   by PostHog — the events listed in section 3e and the three facts attached to them — stays as
@@ -439,6 +495,15 @@ emailing us.</p>
   pseudonymous, like the two records above. It holds no email address, no name and nothing you
   wrote. If you would like it removed before that window expires, email us and we will delete
   it.</p>
+
+  <p style="margin-bottom:0"><strong>Reports you sent us.</strong> The reference to your account is
+  set to null, but <strong>the report itself is kept, including the words you wrote</strong> — and,
+  for a wrong-question report, the question and the answer you gave. We keep it because a report may
+  still describe a fault we have not fixed, and deleting it would destroy the only record that we
+  were ever told. This is the one surviving record that can contain something you typed: if your
+  message named you, quoted an address or described your situation, that text remains. So it is
+  <em>pseudonymous</em> rather than anonymous, and we will not call it erased when it is not. Email
+  us and we will delete it, and the copy in our support inbox with it.</p>
 </div>
 
 <h2 id="rights">11. Your rights</h2>
@@ -471,7 +536,10 @@ Information Commissioner</a>. We would rather you raised it with us first.</p>
 instructions, and what is and is not removed, are on our
 <a href="delete-account.html"><strong>account deletion page</strong></a>.</p>
 
-<p>In short: email
+<p>In short, there are two routes. <strong>In the app</strong> — Profile tab, scroll to the
+bottom, <em>Delete account</em>, and type DELETE to confirm. It runs as you confirm it: nothing is
+queued, nobody reviews it, and we cannot reverse it afterwards. <strong>By email</strong>, if you
+have already uninstalled — write to
 <a href="mailto:support.certsage@integolutions.com">support.certsage@integolutions.com</a> from
 your account's email address with the subject <em>Delete my account</em>. We confirm within 7 days
 and complete deletion within 30.</p>
