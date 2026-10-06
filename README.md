@@ -68,6 +68,7 @@ Use the same URL in all three. Changing it later means updating all three.
 ## Keeping it accurate
 
 The policy describes what the app **actually does today**. It states explicitly that
-CertSage collects no location, no advertising ID, no microphone or camera data, no
-analytics, and no push tokens. Update this page *before* shipping any of those --
+CertSage collects no location, no advertising ID and no microphone or camera data, and
+names every processor (Sentry, PostHog, Make, Firebase Cloud Messaging for push). Update
+this page *before* shipping anything that changes that --
 a Data safety declaration that disagrees with the policy is a common review rejection.

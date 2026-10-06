@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Delete your account and data</h1>
-  <p class="dates">Last updated: 26 September 2026</p>
+  <p class="dates">Last updated: 7 October 2026</p>
 </header>
 
 <p class="lede">You can delete your CertSage account and everything associated with it, at any time,
@@ -73,6 +73,9 @@ account does not stop billing by itself. See <a href="#subscription">below</a>.<
   <li>Every quiz question you were asked, the answers you gave and whether they were correct.</li>
   <li>All practice exam attempts and per-question results.</li>
   <li>Your cached subscription status and entitlements.</li>
+  <li>The push tokens of every device you allowed notifications on, and the record of every
+      notification we sent you. Deleting from inside the app also asks Google to invalidate the
+      token on the device you are using.</li>
 </ul>
 
 <p>These are removed together, in one cascading operation. Deletion is permanent and cannot be
@@ -160,8 +163,10 @@ both.</p>
 <p>Separately, our providers keep their own records under their own policies and retention
 schedules — <a href="https://policies.google.com/privacy" rel="noopener">Google Play</a> for
 purchases, <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> for
-subscription state, and <a href="https://www.make.com/en/privacy-notice" rel="noopener">Make</a>
-(make.com) for the delivery of any report you sent us. We can ask them to delete on your behalf but
+subscription state, <a href="https://www.make.com/en/privacy-notice" rel="noopener">Make</a>
+(make.com) for the delivery of any report you sent us, and Google's
+<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Cloud Messaging</a>
+for the push token and installation ID of any device you allowed notifications on. We can ask them to delete on your behalf but
 cannot do it directly.</p>
 
 <h2 id="subscription">If you have a paid subscription</h2>
@@ -181,8 +186,10 @@ has taken effect, then request deletion.</p>
 <h2 id="alternatives">If you do not want to delete everything</h2>
 
 <ul>
-  <li><strong>Just want to stop?</strong> Sign out. Your account stays intact and nothing further
-      is processed until you sign back in.</li>
+  <li><strong>Just want to stop?</strong> Sign out. Your account stays intact, that device stops
+      receiving notifications, and nothing further is processed until you sign back in.
+      <strong>Just want fewer notifications?</strong> Turn them off, or switch off the kinds you do
+      not want, in Settings.</li>
   <li><strong>Want to correct something?</strong> Most profile and goal fields are editable in
       Settings. You do not need us for that.</li>
   <li><strong>Want a copy of your data?</strong> Email the same address and ask for an export.
