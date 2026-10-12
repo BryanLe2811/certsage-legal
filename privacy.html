@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Privacy Policy</h1>
-  <p class="dates">Last updated: 12 October 2026 &middot; Effective: 12 October 2026</p>
+  <p class="dates">Last updated: 13 October 2026 &middot; Effective: 13 October 2026</p>
 </header>
 
 
@@ -54,7 +54,7 @@ official certification documentation.</p>
     <tr><td>Do you sell my data?</td><td>No. We do not sell or rent personal data, and we do not share it for cross-context behavioural advertising.</td></tr>
     <tr><td>Do you track me across other apps?</td><td>No.</td></tr>
     <tr><td>Do you use third-party analytics?</td><td>Yes, for the product — never for marketing. Two tools are embedded: <strong>Sentry</strong>, which reports crashes and performance problems, and <strong>PostHog</strong>, which records which features you use and when, so we can see where the app is working and where people get stuck. Neither is an advertising SDK, neither tracks you across other apps, and neither receives what you wrote or read. See <a href="#third-parties">section 7</a>.</td></tr>
-    <tr><td>Do you send push notifications?</td><td>Only if you allow them, and you can turn each kind off in Settings. They are delivered through Google's <strong>Firebase Cloud Messaging</strong>, which receives a token identifying your device's copy of the app and the text of each notification: the name of what you are studying and figures such as a streak count or a readiness percentage. Never your name, your email address or anything you wrote. See <a href="#push">section 3g</a>.</td></tr>
+    <tr><td>Do you send push notifications?</td><td>Only if you allow them, and you can turn each kind off in Settings. They are delivered through Google's <strong>Firebase Cloud Messaging</strong>, which receives a token identifying your device's copy of the app and the text of each notification: the name of what you are studying (or of a newly added certification related to it) and figures such as a streak count or a readiness percentage. Never your name, your email address or anything you wrote. See <a href="#push">section 3g</a>.</td></tr>
     <tr><td>Does an AI see my messages?</td><td>Yes — your coaching conversations are sent to Anthropic to generate replies. See <a href="#ai">section 6</a>.</td></tr>
     <tr><td>What happens when I report a bug or a wrong answer?</td><td>Your message is stored on our servers and emailed to us through <strong>Make</strong> (make.com), an automation service in the EU. It carries your email address and preferred name so we can reply, plus your plan, app version and device type — and, if you are reporting a <em>question</em>, that question, its options, your answer and the correct one. Nothing is sent unless you choose to send a report. See <a href="#what-we-collect">section 3f</a>.</td></tr>
     <tr><td>Can I get everything deleted?</td><td>Yes. There is a <strong>Delete account</strong> button in the app that takes effect the moment you confirm it — nothing is queued and nobody reviews it. If you have already uninstalled, email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
@@ -201,8 +201,10 @@ service we use for this one purpose. See <a href="#third-parties">section 7</a>.
 <h3 id="push">g. Push notifications</h3>
 <p>The app can remind you to study, warn you before a streak breaks, remind you about a study
 session you left unfinished or a study habit you have paused, tell you how your preparation is
-going and how close your exam is, and let you know about your subscription, such as a payment
-problem or a free trial about to end. <strong>Nothing in this section
+going, how close your exam is and when you look ready to sit a practice exam, tell you when your
+coaching allowance is available again after you have used it up, tell you when a certification
+related to yours is added, and let you know about your subscription, such as a payment problem or
+a free trial about to end. <strong>Nothing in this section
 is collected until you allow notifications in the app</strong> — the app does not contact the
 notification service before then. If your version of the app has never asked you about
 notifications, none of this applies to you.</p>
@@ -217,13 +219,17 @@ notifications, none of this applies to you.</p>
       It is also removed when you delete your account, or after 60 days in which the app has not
       been opened there.</li>
   <li><strong>Your notification preferences</strong>, described in 3a.</li>
+  <li><strong>When your coaching allowance next refills</strong>, recorded only if you use it up, so
+      we can tell you when it has. It is a time and nothing else, and each new one replaces the
+      last.</li>
   <li><strong>A record of each notification we send you</strong>: which kind it was, when it was
       sent, whether it was delivered, whether you opened it, and the figures it quoted. We use it to
       keep to the limits on how often we notify you, and to stop sending kinds of notification that
       nobody finds useful.</li>
 </ul>
 <p>The text of a notification comes from fixed templates, not from an AI, and is filled in only
-with facts from your progress: the name of the certification or topic you are studying, a streak
+with facts from your progress: the name of the certification or topic you are studying (or of a
+newly added certification related to it), a streak
 count, a readiness percentage, a date. <strong>It never contains your name, your email address or
 anything you wrote.</strong> That text passes through Google to reach your device — on iOS, through
 Apple's push notification service as well — and appears on your lock screen unless you change that
@@ -305,7 +311,8 @@ Settings, or block them entirely in your device's settings.</p>
       drawn from a shared bank, so fixing one fixes it for every learner who would have been asked
       it.</li>
   <li>To send the push notifications you have allowed — study reminders, streak and progress
-      updates, and notices about your subscription — and to keep to how often we send them.</li>
+      updates, word that your coaching allowance has refilled or that a related certification has
+      been added, and notices about your subscription — and to keep to how often we send them.</li>
 </ul>
 
 <p>We do not use your data to build advertising profiles, and we do not use your study data for
@@ -432,7 +439,8 @@ bound by a data processing agreement, and receives only what it needs.</p>
       <td><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Firebase Cloud Messaging</a></td>
       <td>Delivering the push notifications you allow</td>
       <td>A push token and Firebase installation ID for each device you allow notifications on, and
-          the text of each notification — the name of what you are studying and figures about your
+          the text of each notification — the name of what you are studying (or of a related
+          certification) and figures about your
           progress, as listed in section 3g. No name, no email address, nothing you wrote.
           <strong>It receives nothing unless you allow notifications.</strong> On iOS, the
           notification is passed on to Apple's push notification service for delivery.</td>
@@ -529,6 +537,8 @@ emailing us.</p>
             not deleted at that moment, it is deleted the next time we try to use it. Google holds
             the token and the Firebase installation ID under its own retention, described in its
             <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>.</td></tr>
+    <tr><td>When your coaching allowance next refills</td>
+        <td>Until the next time you use the allowance up, which replaces it. Deleted when you delete your account.</td></tr>
     <tr><td>Record of the notifications we sent you</td>
         <td>As long as your account exists. Deleted when you delete your account.</td></tr>
     <tr><td>Server logs</td>
