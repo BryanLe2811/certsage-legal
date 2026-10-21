@@ -18,7 +18,7 @@ Both documents are filled in and ready to publish. The details they state:
 - **Controller:** Van Manh Le, individual developer, Australia
 - **Contact:** support.certsage@integolutions.com
 - **Data residency:** Supabase `ap-southeast-1` (Singapore)
-- **Sub-processors:** Supabase, Anthropic, OpenAI (TTS only), RevenueCat, Google Play
+- **Sub-processors:** Supabase, Anthropic, OpenAI (TTS only), RevenueCat, Google Play, Apple (App Store, Sign in with Apple)
 
 If any of these change, the policy has to change with them.
 

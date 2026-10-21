@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Privacy Policy</h1>
-  <p class="dates">Last updated: 13 October 2026 &middot; Effective: 13 October 2026</p>
+  <p class="dates">Last updated: 22 October 2026 &middot; Effective: 22 October 2026</p>
 </header>
 
 
@@ -73,8 +73,14 @@ official certification documentation.</p>
       recovered, only reset.</li>
   <li><strong>Google sign-in identity</strong> — if you choose that route, we receive the
       account identifier, your email address, and the display name and profile picture URL Google
-      chooses to return. We do not receive your password. Sign in with Apple is not offered in this
-      version; if it is added, this policy will be updated before it ships.</li>
+      chooses to return. We do not receive your password.</li>
+  <li><strong>Sign in with Apple identity</strong> — on iOS only, if you choose that route. We
+      receive Apple's identifier for your account and an email address. If you choose Apple's
+      <em>Hide My Email</em>, that address is a private relay address that Apple forwards to you, and
+      we never see your real one. The first time you sign in, we also receive the name you allow
+      Apple to share, which we use only to pre-fill the name step after sign-up. We do not receive
+      your password. Because a relay address is a different address from your own, signing in with
+      it creates a separate account from one made with your real email.</li>
   <li><strong>Preferred name</strong> — what you would like the app to call you. Asked once,
       after sign-up.</li>
   <li><strong>Occupation</strong> — chosen from a fixed list of ten options, one of which is
@@ -262,7 +268,7 @@ Settings, or block them entirely in your device's settings.</p>
       described in <a href="#what-we-collect">sections 3e and 3g</a> and
       <a href="#third-parties">section 7</a>; none of them is ever sent your messages, the text of
       your quiz questions or answers, your name or your email address. The app also contains the
-      libraries for Google sign-in, Google Play billing and RevenueCat, our subscription manager;
+      libraries for Google sign-in, Sign in with Apple, Google Play billing and RevenueCat, our subscription manager;
       each of those does only the job it is named for, and what it receives is listed in
       <a href="#third-parties">section 7</a>. One further
       provider, Make, does receive your email address and your own words — but only at the moment
@@ -274,7 +280,9 @@ Settings, or block them entirely in your device's settings.</p>
   <li><strong>No health, financial, biometric, racial, religious, political or sexual-orientation
       data.</strong> We have no field for it and do not want it. If you sign in with Google, Android
       may show its own fingerprint, face or screen-lock prompt to unlock a saved sign-in; that check
-      happens inside Android, and nothing about it reaches the app or us.</li>
+      happens inside Android, and nothing about it reaches the app or us. Likewise, on iOS, Face ID
+      or Touch ID may confirm a Sign in with Apple; that check happens inside iOS, and nothing about
+      it reaches the app or us.</li>
 </ul>
 
 <p>The Android app requests only these permissions:</p>
@@ -458,6 +466,18 @@ bound by a data processing agreement, and receives only what it needs.</p>
       <td>Only used if you choose that sign-in method</td>
       <td>Global</td>
     </tr>
+    <tr>
+      <td><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> App Store</td>
+      <td>App distribution on iOS, and payment processing</td>
+      <td>Your purchase details, handled entirely under Apple's own policy</td>
+      <td>Global</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a> sign-in</td>
+      <td>Optional authentication, iOS only</td>
+      <td>Only used if you choose that sign-in method</td>
+      <td>Global</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -526,7 +546,7 @@ emailing us.</p>
     <tr><td>Account, profile, study history, chat transcripts, quiz and exam results</td>
         <td>As long as your account exists. Deleted when you delete your account.</td></tr>
     <tr><td>Subscription status</td>
-        <td>Deleted with your account. RevenueCat and Google retain their own records under their own policies.</td></tr>
+        <td>Deleted with your account. RevenueCat, Google and Apple retain their own records under their own policies.</td></tr>
     <tr><td>AI cost records and billing event logs</td>
         <td><strong>Retained after account deletion, with the link to your account removed</strong> — see the note below.</td></tr>
     <tr><td>Reports you send us, and what we assembled in order to answer them</td>
