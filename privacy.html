@@ -14,7 +14,7 @@
 <header class="masthead">
   <a class="brand" href="index.html"><svg class="mark" viewBox="303.58 312.16 892.84 875.67" role="img" aria-label="CertSage"><path fill="currentColor" d="M750 312.16C506.84 312.16 303.58 511.51 303.58 750c0 238.48 203.26 437.83 446.42 437.83Z"/><path fill="currentColor" d="M1196.42 312.16C953.26 312.16 750 511.51 750 750c0 238.48 203.26 437.83 446.42 437.83Z"/></svg><span class="wordmark">CertSage</span></a>
   <h1>Privacy Policy</h1>
-  <p class="dates">Last updated: 22 October 2026 &middot; Effective: 22 October 2026</p>
+  <p class="dates">Last updated: 12 November 2026 &middot; Effective: 12 November 2026</p>
 </header>
 
 
@@ -54,7 +54,7 @@ official certification documentation.</p>
     <tr><td>Do you sell my data?</td><td>No. We do not sell or rent personal data, and we do not share it for cross-context behavioural advertising.</td></tr>
     <tr><td>Do you track me across other apps?</td><td>No.</td></tr>
     <tr><td>Do you use third-party analytics?</td><td>Yes, for the product — never for marketing. Two tools are embedded: <strong>Sentry</strong>, which reports crashes and performance problems, and <strong>PostHog</strong>, which records which features you use and when, so we can see where the app is working and where people get stuck. Neither is an advertising SDK, neither tracks you across other apps, and neither receives what you wrote or read. See <a href="#third-parties">section 7</a>.</td></tr>
-    <tr><td>Do you send push notifications?</td><td>Only if you allow them, and you can turn each kind off in Settings. They are delivered through Google's <strong>Firebase Cloud Messaging</strong>, which receives a token identifying your device's copy of the app and the text of each notification: the name of what you are studying (or of a newly added certification related to it) and figures such as a streak count or a readiness percentage. Never your name, your email address or anything you wrote. See <a href="#push">section 3g</a>.</td></tr>
+    <tr><td>Do you send push notifications?</td><td>Only if you allow them, and you can turn each kind off in Settings. They are available in the Android app today; on iPhone they will arrive in a later version. They are delivered through Google's <strong>Firebase Cloud Messaging</strong> (on iPhone, through Apple's push notification service as well), which receives a token identifying your device's copy of the app and the text of each notification: the name of what you are studying (or of a newly added certification related to it) and figures such as a streak count or a readiness percentage. Never your name, your email address or anything you wrote. See <a href="#push">section 3g</a>.</td></tr>
     <tr><td>Does an AI see my messages?</td><td>Yes — your coaching conversations are sent to Anthropic to generate replies. See <a href="#ai">section 6</a>.</td></tr>
     <tr><td>What happens when I report a bug or a wrong answer?</td><td>Your message is stored on our servers and emailed to us through <strong>Make</strong> (make.com), an automation service in the EU. It carries your email address and preferred name so we can reply, plus your plan, app version and device type — and, if you are reporting a <em>question</em>, that question, its options, your answer and the correct one. Nothing is sent unless you choose to send a report. See <a href="#what-we-collect">section 3f</a>.</td></tr>
     <tr><td>Can I get everything deleted?</td><td>Yes. There is a <strong>Delete account</strong> button in the app that takes effect the moment you confirm it — nothing is queued and nobody reviews it. If you have already uninstalled, email us and we action it within 30 days. See <a href="#deletion">section 12</a>.</td></tr>
@@ -127,6 +127,11 @@ official certification documentation.</p>
   <li>Through our subscription manager, RevenueCat, we receive and store: a pseudonymous
       customer identifier (your account's internal UUID), your plan tier, the platform you
       purchased on, subscription status, renewal date and auto-renew flag.</li>
+  <li><strong>A subscription belongs to the store account that bought it</strong> — the Apple
+      Account signed in to the App Store, or the Google account signed in to Google Play — not to
+      your CertSage account. If a different CertSage account on the same device or store account
+      buys or restores, the subscription moves to that CertSage account and the first one returns
+      to the Free plan. We record the move so each account shows the plan it actually has.</li>
   <li>We keep a verbatim copy of the subscription events sent to us, so a billing dispute can
       be reconstructed exactly as it happened.</li>
 </ul>
@@ -213,7 +218,9 @@ related to yours is added, and let you know about your subscription, such as a p
 a free trial about to end. <strong>Nothing in this section
 is collected until you allow notifications in the app</strong> — the app does not contact the
 notification service before then. If your version of the app has never asked you about
-notifications, none of this applies to you.</p>
+notifications, none of this applies to you. <strong>Today that includes the iPhone app</strong>,
+which does not offer notifications yet; when it does, it will ask first, and everything below
+will apply to it in the same way.</p>
 <ul>
   <li><strong>A push token</strong> for each device you allow notifications on — a random identifier
       issued by Google's Firebase Cloud Messaging that lets a notification reach that copy of the
@@ -253,8 +260,13 @@ Settings, or block them entirely in your device's settings.</p>
   <li><strong>No location data</strong> of any kind, precise or approximate.</li>
   <li><strong>No contacts, photos, files, calendar or SMS access.</strong></li>
   <li><strong>No microphone or camera access.</strong> The Android app does not request the
-      <code>RECORD_AUDIO</code> or <code>CAMERA</code> permission. Voice input is planned for a
-      future version; this policy will be updated before it ships.</li>
+      <code>RECORD_AUDIO</code> or <code>CAMERA</code> permission. The iPhone app never asks for
+      the microphone, speech recognition or the camera. It does carry Apple's required
+      <em>descriptions</em> for the microphone and speech recognition, because a speech library
+      included for future voice input makes Apple require them — but a description is not a
+      request, and without your permission, which the app never asks for, no app can use either.
+      Voice input is planned for a future version; this policy will be updated before it
+      ships.</li>
   <li><strong>No advertising SDK</strong> is embedded, no advertising identifier is collected, and
       nothing you do is used to profile you for advertising or to measure a marketing campaign. We
       do not track you across other apps or websites.</li>
@@ -268,7 +280,7 @@ Settings, or block them entirely in your device's settings.</p>
       described in <a href="#what-we-collect">sections 3e and 3g</a> and
       <a href="#third-parties">section 7</a>; none of them is ever sent your messages, the text of
       your quiz questions or answers, your name or your email address. The app also contains the
-      libraries for Google sign-in, Sign in with Apple, Google Play billing and RevenueCat, our subscription manager;
+      libraries for Google sign-in, Sign in with Apple, Google Play billing, Apple's in-app purchase system and RevenueCat, our subscription manager;
       each of those does only the job it is named for, and what it receives is listed in
       <a href="#third-parties">section 7</a>. One further
       provider, Make, does receive your email address and your own words — but only at the moment
@@ -303,6 +315,12 @@ Settings, or block them entirely in your device's settings.</p>
       private to the app. No other app can hold it.</li>
 </ul>
 <p>None of these permissions read personal data from your device.</p>
+
+<p><strong>The iPhone app asks you for no permission today.</strong> It declares two capabilities,
+neither of which reads anything from your device: <strong>background audio</strong>, so Listening
+mode keeps playing with the screen locked, and <strong>Sign in with Apple</strong>. Subscriptions
+use Apple's own purchase screen. When notifications come to the iPhone app, it will ask your
+permission first, and only when you choose to allow them.</p>
 
 <h2 id="how-we-use">5. How we use your data</h2>
 
@@ -656,11 +674,16 @@ have already uninstalled — write to
 your account's email address with the subject <em>Delete my account</em>. We confirm within 7 days
 and complete deletion within 30.</p>
 
+<p>If you signed in with Apple, deleting in the app also revokes CertSage's access to your Apple ID
+at the same moment, so CertSage disappears from Settings → Apple Account → Sign in with Apple. By
+email we cannot do that for you; the account deletion page explains how to do it yourself.</p>
+
 <h2 id="security">13. How we protect your data</h2>
 
 <ul>
   <li>All traffic between the app and our servers is encrypted with TLS. The Android build blocks
-      unencrypted connections outright.</li>
+      unencrypted connections outright, and on iPhone, Apple's App Transport Security does the
+      same.</li>
   <li>Data is encrypted at rest by our hosting provider.</li>
   <li>Every table enforces <strong>row-level security</strong>: a request carrying your
       credentials can only ever read rows belonging to you, enforced by the database itself rather
